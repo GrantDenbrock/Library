@@ -11,3 +11,6 @@ def test_bubble():
 
 def test_search():
     assert search(l1) == r1
+
+def test_count():
+    assert count(l1) == r1

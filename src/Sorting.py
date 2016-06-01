@@ -44,7 +44,18 @@ def merge(array):
     return _merge(l1,l2)
 
 def count(array):
-    raise NotImplementedError
+    res = []
+    freq = {}
+    for i in array:
+        if i not in freq.keys():
+            freq[i] = 1
+        else:
+            freq[i] += 1
+
+    for i in freq.keys():
+        for j in range(freq[i]):
+            res.append(i)
+    return res
 
 def search(array):
     raise NotImplementedError
