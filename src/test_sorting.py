@@ -9,8 +9,8 @@ def test_merge():
 def test_bubble():
     assert bubble(l1) == r1
 
-def test_search():
-    assert search(l1) == r1
+def test_select():
+    assert select(l1) == r1
 
 def test_count():
     assert count(l1) == r1
