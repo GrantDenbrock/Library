@@ -17,7 +17,6 @@ def bubble(array):
 def merge(array):
 
     def _merge(l,r):
-        print("merging: {} and {}".format(l,r))
         res = []
         while len(l) is not 0 and len(r) is not 0:
             if l[0] <= r[0]:
@@ -30,7 +29,6 @@ def merge(array):
             res.append(l[i])
         for i in range(len(r)):
             res.append(r[i])
-        print("Result: {} <--> {}  {}".format(res,l,r))
         return res
 
     if len(array) == 1:
