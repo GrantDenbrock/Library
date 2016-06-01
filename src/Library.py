@@ -1,6 +1,6 @@
 import Book
 
-class Library(self):
+class Library(object):
 	def __init__(self):
 		self.shelf=[]
 	
