@@ -45,6 +45,21 @@ def merge(array):
 
 def count(array):
     raise NotImplementedError
-
+    
 def search(array):
-    raise NotImplementedError
+	def _swap(x,y):
+		tmp = array[x]
+        array[x]=array[y]
+        array[y]=tmp
+        
+	cursor=0
+	for j in range(len(array)-1):
+        minimum = cursor
+		for i in range(cursor,len(array))
+			if array[i] < array[minimum]:
+				minimum = i
+		_swap(cursor,minimum)
+		cursor += 1
+		
+	return array
+		
