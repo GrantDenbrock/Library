@@ -1,18 +1,18 @@
 def bubble(array):
-	def _swap(x,y):
-		tmp = array[x]
-		array[x]=array[y]
-		array[y]=tmp
-		
-		do:
-			swapped=false
-			for i in len(array[])
-				if array[i] > array[i+1]
-					_swap(array[i],array[i+1])
-					return swapped=true
-		while:
-			swapped=true
-    raise NotImplementedError
+
+    def _swap(x,y):
+        tmp = array[x]
+        array[x]=array[y]
+        array[y]=tmp
+
+    sort = True
+    while sort:
+        sort = False
+        for i in range(len(array)-1):
+            if array[i] > array[i+1]:
+                _swap(i,i+1)
+                sort = True
+    return array
 
 def merge(array):
 
@@ -47,4 +47,4 @@ def count(array):
     raise NotImplementedError
 
 def search(array):
-	raise NotImplementedError
+    raise NotImplementedError
