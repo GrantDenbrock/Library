@@ -1,4 +1,4 @@
-#library.py
+import Book
 
 class library(self):
 	def __init__(self):
@@ -7,4 +7,3 @@ class library(self):
 	def addbook(self,books):
 		for book in books:
 			self.shelf.append(book)
-		
